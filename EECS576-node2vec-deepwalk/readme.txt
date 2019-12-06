@@ -19,8 +19,12 @@ gensim==3.8.1
 4. how to run:
    
     1) first is to generate the embedding file from pickle graphs in graphs folder to emb folder:
-	example: python ./src/main_pickle.py input_file output_dir --p 1 --q 1 --directed --weighted (p,q is the parameters for node2vec, --directed means the graph is directed, --weighted means the graph is weighted.
+	example: python ./src/main_pickle.py --input input_file --output output_dir --p 1 --q 1 --directed --weighted (p,q is the parameters for node2vec, --directed means the graph is directed, --weighted means the graph is weighted.
     2) run run_emb2npy.sh this file will run emb2npy.py to do format conversion.
 	example: sh run_emb2npy.sh
     3) Node2Vec_linear_classfier_link_prediction.ipynb logistic classifier for link prediction.
 
+5. make file
+
+make deepwalk command will run the deepwalk method to generate embeddings
+make node2vec command will run the node2vec method to generate embeddings

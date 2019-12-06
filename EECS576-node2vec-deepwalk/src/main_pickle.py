@@ -16,7 +16,7 @@ import node2vec
 from gensim.models import Word2Vec
 import scipy.sparse as sps
 import pickle
-import sys
+import argparse
 
 def parse_args():
 	'''
@@ -66,10 +66,9 @@ def parse_args():
 
 	return parser.parse_args()
 
-input_file = sys.argv[1]
-output_dir = sys.argv[2]
 
-def read_graph():
+
+def read_graph(input_file):
 	'''
 	Reads the input network in networkx.
 	'''
@@ -93,14 +92,14 @@ def main(args):
 	'''
 	Pipeline for representational learning for all nodes in a graph.
 	'''
-	graph_list = read_graph()
+	graph_list = read_graph(args.input)
 	cnt = 0 
 	for nx_G in graph_list:
 		print(nx_G.size())
 		G = node2vec.Graph(nx_G, args.directed, args.p, args.q)
 		G.preprocess_transition_probs()
 		walks = G.simulate_walks(args.num_walks, args.walk_length)
-		output_file = output_dir+'output_equal_month_' + str(cnt) + '.emb'
+		output_file = args.output+'output_equal_month_' + str(cnt) + '.emb'
 		learn_embeddings(nx_G, walks, output_file)
 		cnt += 1
 
