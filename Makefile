@@ -1,7 +1,3 @@
-sample:
-	ipython nbconvert --to=python ./haha/Untitled2.ipynb
-	python Untitled2.py
-
 LINE-Embeddings:
 	ipython nbconvert --to=python ./embeddings/LINE_Embeddings.ipynb
 	python LINE_Embeddings.py
