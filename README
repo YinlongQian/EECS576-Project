@@ -1,0 +1,3 @@
+graphs folder: codes that generate graphs
+embeddings folder: codes that generate node embeddings for graphs
+link-prediction folder: codes that build classifier and do link prediction task
