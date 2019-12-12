@@ -1,3 +1,10 @@
-graphs folder: codes that generate graphs
-embeddings folder: codes that generate node embeddings for graphs
-link-prediction folder: codes that build classifier and do link prediction task
+# EECS576-Project
+
+## Impact of Discrete Techniques on Dynamic Network Representation Learning
+
+-----
+### Project Group Members:
+1. Alican Buyukcakir - @abuyukcakir
+2. Yin Lin - @niceirene
+3. Puja Trivedi - @pindapuj
+4. Yinlong Qian - @yinlongqian
