@@ -8,3 +8,10 @@
 2. Yin Lin - @niceirene
 3. Puja Trivedi - @pindapuj
 4. Yinlong Qian - @yinlongqian
+
+### Existing Implemenations: 
+We gratefully use code from the following.
+- https://github.com/aditya-grover/node2vec (Node2Vec)
+- https://github.com/shenweichen/GraphEmbedding (LINE)
+- https://github.com/palash1992/DynamicGEM (Dyngraph2vec)
+- https://github.com/snap-stanford/graphwave/ (GraphWave)
